@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" Includes a `from_json_string` model"""
 import json
 
 

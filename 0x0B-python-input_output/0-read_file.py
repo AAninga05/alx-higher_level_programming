@@ -1,7 +1,11 @@
 #!/usr/bin/python3
+""" Includes a `read_file` fuction"""
+
+
 def read_file(filename=""):
-    '''
-        Reads the contents of a file
-    '''
-    with open(filename, encoding="utf-8") as f:
-        print(f.read(), end="")
+    """ reads a text file (UTF8)
+    and prints it to stdout
+    """
+    with open(filename, 'r', encoding="utf-8") as new_file:
+        for line in new_file:
+            print(line, end="")
