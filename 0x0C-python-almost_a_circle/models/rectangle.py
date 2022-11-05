@@ -114,7 +114,7 @@ class Rectangle(Base):
         elif kwargs and len(kwargs):
             for key, value in kwargs.items():
                 if key == "id":
-                    if value == None:
+                    if value is None:
                         self.__init__(self.width, self.height, self.x, self.y)
                     else:
                         self.id = value
@@ -127,7 +127,6 @@ class Rectangle(Base):
                 elif key == "y":
                     self.y = value
 
- 
     def to_dictionary(self):
         """Return the dictionary representation of the Square."""
         return {
@@ -136,4 +135,4 @@ class Rectangle(Base):
             "height": self.height,
             "x": self.x,
             "y": self.y
-            }  
+            }
